@@ -493,7 +493,7 @@ body {
   }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 368px) {
   /* Mobile */
 .header {
     justify-content: center;
@@ -584,4 +584,5 @@ body {
 .social-media {
     justify-content: center;
   }
+
 }
