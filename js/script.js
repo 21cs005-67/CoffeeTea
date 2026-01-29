@@ -3,7 +3,7 @@ const menuItems = [
   { name: "Combo Burger + Drink", price: "₹599", category: "combo", veg: "nonveg", img: "https://images.unsplash.com/photo-1550547660-d9450f859349" },
   { name: "Cheese Pizza", price: "₹499", category: "pizza", veg: "veg", img: "https://images.unsplash.com/photo-1513104890138-7c749659a591" },
   { name: "Cheese Pizza", price: "₹499", category: "pizza", veg: "veg", img: "https://images.unsplash.com/photo-1513104890138-7c749659a591" },
-  { name: "Pepperoni Pizza", price: "₹549", category: "pizza", veg: "nonveg", img: "https://unsplash.com/photos/pizza-with-cheese-and-tomato-_P76trHTWDE" },
+  { name: "Pepperoni Pizza", price: "₹549", category: "pizza", veg: "nonveg", img: " //https://images.unsplash.com/photo-1601924638867-3ec62e3ee0a7?auto=format&fit=crop&w=800&q=80" },
   { name: "Veg Loaded Pizza", price: "₹479", category: "pizza", veg: "veg", img: "https://images.unsplash.com/photo-1601924582975-7e670e52f6c6" },
   { name: "BBQ Chicken Pizza", price: "₹599", category: "pizza", veg: "nonveg", img: "https://images.unsplash.com/photo-1594007654729-407eedc4be65" },
   { name: "Paneer Tikka Pizza", price: "₹529", category: "pizza", veg: "veg", img: "https://images.unsplash.com/photo-1605475128023-7a3c7c07c3b4" },
@@ -138,5 +138,6 @@ prevBtn.addEventListener("click", () => {
 dots.forEach((dot, index) => {
   dot.addEventListener("click", () => showSlide(index));
 });
+
 
 
