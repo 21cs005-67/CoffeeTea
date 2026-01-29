@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>CoffeeTea Menu</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  
+</head>
+<body>
+<!-- HEADER -->
+<header class="header">
+   <div class="logo">
+      <img src="assets/image/logo.jpeg" alt="Restaurant Logo">
+    </div>
+</header>
+
+<!-- BEST SELLING -->
+<section class="hero">
+  <div class="hero-slider" id="heroSlider">
+
+    <div class="hero-slide active">
+      <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591" alt="">
+      <div class="hero-content">
+        <h1>Hot & Fresh Pizza 🍕</h1>
+        <p>Order now and enjoy cheesy goodness</p>
+        <button>Order Now</button>
+      </div>
+    </div>
+
+    <div class="hero-slide">
+      <img src="https://images.unsplash.com/photo-1550547660-d9450f859349" alt="">
+      <div class="hero-content">
+        <h1>Burger Combo 🔥</h1>
+        <p>Burger + Drink at best price</p>
+        <button>View Menu</button>
+      </div>
+    </div>
+
+    <div class="hero-slide">
+      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836" alt="">
+      <div class="hero-content">
+        <h1>Cool Drinks 🥤</h1>
+        <p>Refresh your mood</p>
+        <button>Explore</button>
+      </div>
+    </div>
+
+    <!-- Dots -->
+    <div class="hero-dots">
+      <span class="dot active" onclick="goToSlide(0)"></span>
+      <span class="dot" onclick="goToSlide(1)"></span>
+      <span class="dot" onclick="goToSlide(2)"></span>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <button class="hero-nav left" onclick="prevHero()">‹</button>
+  <button class="hero-nav right" onclick="nextHero()">›</button>
+</section>
+
+<!-- CATEGORY DROPDOWN -->
+<section class="card">
+  <div class="filter-row">
+    <div class="dropdown">
+      <button class="dropdown-btn" onclick="toggleDropdown()">
+        Categories <span>▼</span>
+      </button>
+
+      <div class="dropdown-content" id="dropdown">
+        <button onclick="filterItems('starter')">Starter</button>
+        <button onclick="filterItems('pizza')">Pizza</button>
+        <button onclick="filterItems('burger')">Burger</button>
+        <button onclick="filterItems('drinks')">Drinks</button>
+        <button onclick="filterItems('combo')">Combo</button>
+        <button onclick="filterItems('dessert')">Dessert</button>
+      </div>
+    </div>
+
+    <div class="veg-nonveg">
+      <button class="all-btn" onclick="filterVeg('all')">⚪ All</button>
+      <button class="veg-btn" onclick="filterVeg('veg')">🟢 Veg</button>
+      <button class="nonveg-btn" onclick="filterVeg('nonveg')">🔴 Non-Veg</button>
+    </div>
+  </div>
+</section>
+
+<!-- CATEGORY PILLS -->
+  <div class="pill-container">
+
+  <button class="pill" onclick="filterItems('starter')">
+    <img src="assets/icons/starter_icon.jpg" alt="Starter" class="pill-icon">
+    <span>Starter</span>
+  </button>
+
+  <button class="pill" onclick="filterItems('pizza')">
+    <img src="assets/icons/pizza_icon.jpg" alt="Pizza" class="pill-icon">
+    <span>Pizza</span>
+  </button>
+
+  <button class="pill" onclick="filterItems('burger')">
+    <img src="assets/icons/burger_icon.jpg" alt="Burger" class="pill-icon">
+    <span>Burger</span>
+  </button>
+
+  <button class="pill" onclick="filterItems('drinks')">
+    <img src="assets/icons/drinks_icon.jpg" alt="Drinks" class="pill-icon">
+    <span>Drinks</span>
+  </button>
+
+  <button class="pill" onclick="filterItems('combo')">
+    <img src="assets/icons/combo_icon.jpg" alt="Combo" class="pill-icon">
+    <span>Combo</span>
+  </button>
+  <button class="pill" onclick="filterItems('dessert')">
+    <img src="assets/icons/dessert_icon.jpg" alt="Dessert" class="pill-icon">
+    <span>Dessert</span>
+</div>
+
+<!-- MENU GRID -->
+<section class="menu-grid" id="menuGrid"></section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-col">
+      <h4>CONTACT</h4>
+      <p>📞 +91 00000 00000</p>
+      <p>✉  info@coffetea.in</p>
+      <p>📍 Shop No.7,8,9, A.K 231(new no.)/1(old no.),10th Main Road,4th Avenue, Shanti Colony, Anna Nagar West, Chennai – 600040</p>
+    </div>
+    <div class="footer-col">
+  <h4>SOCIAL MEDIA</h4>
+  <div class="social-media">
+  <a href="https://www.facebook.com/people/Coffetea/61561725157277/" class="social fb"><i class="fab fa-facebook-f"></i></a>
+  <a href="https://www.youtube.com/@coffetea_brew" class="social yt"><i class="fab fa-youtube"></i></a>
+  <a href="https://www.instagram.com/coffetea_brew/?hl=en" class="social ig"><i class="fab fa-instagram"></i></a>
+  </div>
+ </div>
+  </div>
+  <div class="footer-bottom">
+    © 2023 Restaurant Name All Rights Reserved <span>petpooja</span>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
